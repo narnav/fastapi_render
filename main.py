@@ -5,7 +5,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://narnav.github.io/front_render/"],  # Allows all origins
+    allow_origins=["https://narnav.github.io/*"],  # Allows all origins
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
